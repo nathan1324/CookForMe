@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_root"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="cs4326.cook4me.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/cookforme"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <Button
+        android:id="@+id/menu_label_recipes"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButtons"
+        android:lineSpacingExtra="@dimen/appbar_padding_top"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingTop="@dimen/button_padding"
+        android:text="@string/menu_title_recipes"
+        android:textAllCaps="false"
+        android:textSize="@dimen/menu_font_size" />
+
+    <Button
+        android:id="@+id/menu_label_cookterm"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButtons"
+        android:lineSpacingExtra="8sp"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingTop="@dimen/button_padding"
+        android:text="@string/menu_title_cooking_terms"
+        android:textAllCaps="false"
+        android:textSize="@dimen/menu_font_size" />
+
+    <Button
+        android:id="@+id/menu_label_cooktech"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButtons"
+        android:lineSpacingExtra="8sp"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingTop="@dimen/button_padding"
+        android:text="@string/menu_title_cooking_techs"
+        android:textAllCaps="false"
+        android:textSize="@dimen/menu_font_size" />
+
+    <Button
+        android:id="@+id/menu_label_settings"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButtons"
+        android:lineSpacingExtra="8sp"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingTop="@dimen/button_padding"
+        android:text="@string/menu_title_settings"
+        android:textAllCaps="false"
+        android:textSize="@dimen/menu_font_size" />
+
+</LinearLayout>

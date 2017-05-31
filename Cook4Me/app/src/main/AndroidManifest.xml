@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs4326.cook4me">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register User"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="User profile"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.MainActivity" />
+        </activity>
+
+        <!--
+        <activity
+            android:name=".RecipeFragment"
+            android:label="@string/title_activity_recipe_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileFragment"
+            android:label="@string/title_activity_profile_fragment"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+        <activity
+            android:name=".RecipesActivity"
+            android:label="@string/title_activity_recipes"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.MainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchRecipeActivity" />
+        </activity>
+        <activity
+            android:name=".CookingTerminologyActivity"
+            android:label="@string/title_activity_cooking_terminology"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermActivity"
+            android:label="@string/title_activity_term"
+            android:parentActivityName=".CookingTerminologyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.CookingTerminologyActivity" />
+        </activity>
+        <activity
+            android:name=".SearchRecipeActivity"
+            android:label="@string/title_activity_search_recipe"
+            android:parentActivityName=".RecipesActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.RecipesActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".RecipeInstructActivity"
+            android:label="RecipeInstructActivity"
+            android:parentActivityName=".RecipesActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.RecipesActivity" />
+        </activity>
+        <activity
+            android:name=".AddRecipeActivity"
+            android:label="@string/title_activity_add_recipe"
+            android:parentActivityName=".RecipesActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.RecipesActivity" />
+        </activity>
+        <activity
+            android:name=".CookingTechniqueActivity"
+            android:label="@string/title_activity_cooking_technique"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TechActivity"
+            android:label="@string/title_activity_tech"
+            android:parentActivityName=".CookingTechniqueActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs4326.cook4me.CookingTechniqueActivity" />
+        </activity>
+        <activity
+            android:name=".StepByStepRecipeActivity"
+            android:label="@string/title_activity_step_by_step_recipe"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

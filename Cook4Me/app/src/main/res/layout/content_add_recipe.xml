@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cs4326.cook4me.AddRecipeActivity"
+    tools:showIn="@layout/activity_add_recipe">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/add_recipe_label1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/add_recipe_input1"
+                android:text="@string/add_recipe_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <EditText
+                android:id="@+id/add_recipe_input1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/add_recipe_label_hint"
+                android:inputType="textAutoComplete" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/add_recipe_label2"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/add_recipe_input2"
+                android:text="@string/add_recipe_ttc"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/add_recipe_input2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/add_recipe_ttc_hint"
+                android:inputType="textShortMessage" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/add_recipe_ing1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/add_recipe_label3"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/add_recipe_input3"
+                android:text="@string/add_recipe_ing"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/add_recipe_input3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/add_recipe_ing_hint"
+                android:inputType="textMultiLine|textLongMessage" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/add_recipe_label4"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_recipe_steps"
+                android:labelFor="@+id/add_recipe_input4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/add_recipe_input4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/add_recipe_steps_hint"
+                android:inputType="textMultiLine|textNoSuggestions|textLongMessage" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/add_recipe_submit_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

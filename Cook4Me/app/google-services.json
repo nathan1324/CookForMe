@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "861080837715",
+    "firebase_url": "https://humanfactorsproject-7dcd0.firebaseio.com",
+    "project_id": "humanfactorsproject-7dcd0",
+    "storage_bucket": "humanfactorsproject-7dcd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861080837715:android:36a31ec513b2b873",
+        "android_client_info": {
+          "package_name": "cs4326.cook4me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861080837715-u30m4s3g9l8igofjvbmlq5eaugpl829v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cs4326.cook4me",
+            "certificate_hash": "7489be90811888b14ef1e6508da25906ef321c06"
+          }
+        },
+        {
+          "client_id": "861080837715-29dhfb9lkvfmfe9i5ltj5p5ogthuvupd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADIaf-XkriQH0tPeF0OiOjUHME7n38gGA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861080837715-29dhfb9lkvfmfe9i5ltj5p5ogthuvupd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
