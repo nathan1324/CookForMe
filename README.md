@@ -1,4 +1,8 @@
-# cs4326-spr17
-Spring 2017 Human Factors Project : Cook4Me
+# CookForMe
+Spring 2017 Human Factors Senior Project : CookForMe
 
-Cook4Me is an mobile application designed for Android. 
+CookForMe is an Android application designed to give a chef of any level of expertise an enhanced recipe experience. CookForMe contains an expanding database of user inputted recipes presented in a clean and easy to use fashion. User's can search for ingredients, recipes, methods, etc. to make for a satisfying experience. The app also provides educational resources for the novice chef. Recipes can be viewed either by user of manual navigation or voice navigation. The app also gives feedback by reading the recipe steps aloud for the user to devote more attention to cooking versus recipe. 
+
+# Screenshots
+
+<img src="https://cloud.githubusercontent.com/assets/17841613/26770230/7a91a5ba-497a-11e7-9a1e-5b1353703fee.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/17841613/26770242/8e24ba86-497a-11e7-8367-5ff7cf150432.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/17841613/26770244/91caae3e-497a-11e7-9e8e-d4f61332f845.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/17841613/26770246/94593666-497a-11e7-881c-335e2f8b201a.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/17841613/26770249/9a3d2b28-497a-11e7-9d3f-8da94b98cfde.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/17841613/26770251/9c9dcc1a-497a-11e7-8fcd-ab822730d305.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/17841613/26770253/9f0f1e7c-497a-11e7-81d6-49cf2043aa23.png" width="30%"></img> 
